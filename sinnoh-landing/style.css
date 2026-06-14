@@ -27,7 +27,7 @@ html {
 body {
     font-family: 'Inter', -apple-system, sans-serif;
     background: var(--bg);
-    background-image: url('dialga-forme.png');
+    background-image: url('pikachu-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
