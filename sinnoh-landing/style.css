@@ -27,11 +27,6 @@ html {
 body {
     font-family: 'Inter', -apple-system, sans-serif;
     background: var(--bg);
-    background-image: url('pikachu-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;
@@ -177,37 +172,26 @@ body::before {
     overflow: hidden;
 }
 
-.wallpaper-layer {
+.ash-pikachu-bg {
     position: absolute;
     inset: 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0;
-    opacity: 0.3;
-    filter: blur(0.5px);
+    overflow: hidden;
 }
 
-.wp-img {
-    width: 25%;
+.ash-pikachu-img {
+    width: 600px;
     height: auto;
-    object-fit: contain;
-    animation: wp-float 8s ease-in-out infinite;
+    opacity: 0.15;
+    filter: blur(1px);
+    animation: ash-float 8s ease-in-out infinite;
 }
 
-.wp-1 { animation-delay: 0s; }
-.wp-2 { animation-delay: -1s; }
-.wp-3 { animation-delay: -2s; }
-.wp-4 { animation-delay: -3s; }
-.wp-5 { animation-delay: -4s; }
-.wp-6 { animation-delay: -5s; }
-.wp-7 { animation-delay: -6s; }
-.wp-8 { animation-delay: -7s; }
-
-@keyframes wp-float {
+@keyframes ash-float {
     0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-15px) scale(1.02); }
+    50% { transform: translateY(-20px) scale(1.03); }
 }
 
 .gradient-orb {
