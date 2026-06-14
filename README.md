@@ -6,6 +6,7 @@ A collection of premium website templates for tech startups and modern businesse
 
 | Template | Description | Price |
 |----------|-------------|-------|
+| [Love Live Landing](./lovelive-landing) | Love Live Sunshine with clickable member bios | $29 |
 | [Universe Landing](./universe-landing) | Cosmic space theme with animated starfield | $29 |
 | [Hello Kitty Landing](./hello-kitty-landing) | Sanrio kawaii pastel pink theme | $29 |
 | [Matrix Landing](./matrix-landing) | Matrix cyberpunk with falling code animation | $29 |
