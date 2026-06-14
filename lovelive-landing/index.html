@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqours // Love Live! Sunshine!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ocean-bg">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+    </div>
+    <div class="sparkles" id="sparkles"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">✦ AQOURS ✦</a>
+            <ul class="nav-links">
+                <li><a href="#members">Members</a></li>
+                <li><a href="#songs">Music</a></li>
+                <li><a href="#live">Live</a></li>
+                <li><a href="#about">Story</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Log In</a>
+                <a href="#" class="btn btn-primary">Join Aqours ♡</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-badge">🌊 Sunshine!! 🌊</div>
+            <h1 class="hero-title">
+                <span class="line-1">Love Live!</span>
+                <span class="line-2 gradient-text">Sunshine!!</span>
+            </h1>
+            <p class="hero-subtitle">9 girls, 1 dream, endless sunshine! Join Aqours on their journey to become the #1 school idols in Japan!</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary btn-lg">Start the Journey ♡</a>
+                <a href="#" class="btn btn-outline btn-lg">Watch Performance</a>
+            </div>
+            <div class="hero-wave">
+                <span>🌊</span>
+                <span>⭐</span>
+                <span>🎤</span>
+                <span>✨</span>
+                <span>🌊</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee-section">
+        <div class="marquee">
+            <span>✦ Kimi no Kokoro ✦ Aozora Jumping Heart ✦ Waku-Waku-Week ✦ Happy Party Train ✦ Sky I Can ✦ Diamond ✦ Forever With You ✦ Hop! Step! Jump! ✦ </span>
+        </div>
+    </section>
+
+    <section id="members" class="members">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Aqours ✦</span>
+                <h2>Meet the <span class="gradient-text">Members</span></h2>
+                <p>9 radiant school idols from Uranohoshi Academy!</p>
+            </div>
+            <div class="members-grid">
+                <div class="member-card" style="--accent: #ff6b9d" onclick="openModal('chika')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="chika.svg" alt="Chika"></div>
+                        <div class="member-year">Year 2</div>
+                    </div>
+                    <h3>Chika Takami</h3>
+                    <span class="member-role">Leader</span>
+                    <p>The energetic leader who never gives up on her dreams!</p>
+                </div>
+                <div class="member-card" style="--accent: #e74c8b" onclick="openModal('riko')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="riko.svg" alt="Riko"></div>
+                        <div class="member-year">Year 2</div>
+                    </div>
+                    <h3>Riko Sakurauchi</h3>
+                    <span class="member-role">Keyboard</span>
+                    <p>A refined musician from Otonokizaka who finds her spark!</p>
+                </div>
+                <div class="member-card" style="--accent: #3b82f6" onclick="openModal('kanan')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="kanan.svg" alt="Kanan"></div>
+                        <div class="member-year">Year 2</div>
+                    </div>
+                    <h3>Kanan Matsuura</h3>
+                    <span class="member-role">Diver</span>
+                    <p>A strong swimmer with a heart of gold!</p>
+                </div>
+                <div class="member-card" style="--accent: #ef4444" onclick="openModal('dia')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="dia.svg" alt="Dia"></div>
+                        <div class="member-year">Year 2</div>
+                    </div>
+                    <h3>Dia Kurosawa</h3>
+                    <span class="member-role">Class Rep</span>
+                    <p>The serious class rep who secretly loves idols!</p>
+                </div>
+                <div class="member-card" style="--accent: #06b6d4" onclick="openModal('you')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="you.svg" alt="You"></div>
+                        <div class="member-year">Year 2</div>
+                    </div>
+                    <h3>You Watanabe</h3>
+                    <span class="member-role">Energizer</span>
+                    <p>Always cheerful with her signature headband!</p>
+                </div>
+                <div class="member-card" style="--accent: #8b5cf6" onclick="openModal('yoshiko')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="yoshiko.svg" alt="Yoshiko"></div>
+                        <div class="member-year">Year 1</div>
+                    </div>
+                    <h3>Yoshiko Tsushima</h3>
+                    <span class="member-role">Fallen Angel</span>
+                    <p>Self-proclaimed fallen angel with a cute twintail!</p>
+                </div>
+                <div class="member-card" style="--accent: #f59e0b" onclick="openModal('hanamaru')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="hanamaru.svg" alt="Hanamaru"></div>
+                        <div class="member-year">Year 1</div>
+                    </div>
+                    <h3>Hanamaru Kunikida</h3>
+                    <span class="member-role">Bookworm</span>
+                    <p>A gentle soul who loves reading and napping!</p>
+                </div>
+                <div class="member-card" style="--accent: #ec4899" onclick="openModal('mari')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="mari.svg" alt="Mari"></div>
+                        <div class="member-year">Year 3</div>
+                    </div>
+                    <h3>Mari Ohara</h3>
+                    <span class="member-role">Director</span>
+                    <p>The half-Japanese, half-Italian vice principal!</p>
+                </div>
+                <div class="member-card" style="--accent: #f43f5e" onclick="openModal('ruby')">
+                    <div class="member-img">
+                        <div class="member-avatar"><img src="ruby.svg" alt="Ruby"></div>
+                        <div class="member-year">Year 1</div>
+                    </div>
+                    <h3>Ruby Kurosawa</h3>
+                    <span class="member-role">Cute</span>
+                    <p>Dia's little sister with an adorable personality!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="songs" class="songs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Music ✦</span>
+                <h2>Hit <span class="gradient-text">Songs</span></h2>
+                <p>Chart-topping singles that touched hearts!</p>
+            </div>
+            <div class="songs-grid">
+                <div class="song-card">
+                    <div class="song-number">#1</div>
+                    <div class="song-info">
+                        <h3>Aozora Jumping Heart</h3>
+                        <span>1st Single • 2016</span>
+                    </div>
+                    <div class="song-plays">♡ 999K</div>
+                </div>
+                <div class="song-card">
+                    <div class="song-number">#2</div>
+                    <div class="song-info">
+                        <h3>Kimi no Kokoro</h3>
+                        <span>2nd Single • 2016</span>
+                    </div>
+                    <div class="song-plays">♡ 888K</div>
+                </div>
+                <div class="song-card">
+                    <div class="song-number">#3</div>
+                    <div class="song-info">
+                        <h3>Happy Party Train</h3>
+                        <span>6th Single • 2017</span>
+                    </div>
+                    <div class="song-plays">♡ 777K</div>
+                </div>
+                <div class="song-card">
+                    <div class="song-number">#4</div>
+                    <div class="song-info">
+                        <h3>Sky I Can</h3>
+                        <span>8th Single • 2018</span>
+                    </div>
+                    <div class="song-plays">♡ 666K</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="live" class="live">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Concerts ✦</span>
+                <h2>Live <span class="gradient-text">Events</span></h2>
+                <p>Experience the magic of Aqours live!</p>
+            </div>
+            <div class="live-grid">
+                <div class="live-card">
+                    <div class="live-date">
+                        <span class="month">JUL</span>
+                        <span class="day">15</span>
+                    </div>
+                    <div class="live-info">
+                        <h3>Aqours 5th Love Live!</h3>
+                        <span class="live-venue">Tokyo Dome</span>
+                        <span class="live-status sold-out">SOLD OUT</span>
+                    </div>
+                </div>
+                <div class="live-card">
+                    <div class="live-date">
+                        <span class="month">AUG</span>
+                        <span class="day">22</span>
+                    </div>
+                    <div class="live-info">
+                        <h3>Summer Sunshine!!</h3>
+                        <span class="live-venue">Yokohama Arena</span>
+                        <span class="live-status available">TICKETS AVAILABLE</span>
+                    </div>
+                </div>
+                <div class="live-card">
+                    <div class="live-date">
+                        <span class="month">DEC</span>
+                        <span class="day">25</span>
+                    </div>
+                    <div class="live-info">
+                        <h3>Merry Christmas! Love Live!</h3>
+                        <span class="live-venue">Saitama Super Arena</span>
+                        <span class="live-status presale">PRESALE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="about-card">
+                        <span class="about-emoji">🌊</span>
+                        <span class="about-number">9</span>
+                        <span class="about-label">Members</span>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-emoji">🎤</span>
+                        <span class="about-number">13</span>
+                        <span class="about-label">Singles</span>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-emoji">⭐</span>
+                        <span class="about-number">5</span>
+                        <span class="about-label">Live Tours</span>
+                    </div>
+                    <div class="about-card">
+                        <span class="about-emoji">💕</span>
+                        <span class="about-number">∞</span>
+                        <span class="about-label">Fan Love</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-badge">✦ Our Story ✦</span>
+                    <h2>The Journey of <span class="gradient-text">Aqours</span></h2>
+                    <p>In the seaside city of Numazu, 9 girls dream of becoming school idols. Despite their academy facing closure, they never give up on their dream to shine on stage and save their beloved school!</p>
+                    <a href="#" class="btn btn-primary">Learn More ♡</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-box">
+                <div class="newsletter-icon">💌</div>
+                <h2>Join the Aqours Family!</h2>
+                <p>Get exclusive updates, wallpapers, and concert info!</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="your@email.com" class="newsletter-input">
+                    <button class="btn btn-primary">Subscribe ♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">✦ AQOURS ✦</a>
+                    <p>Together, we shine like the sun!</p>
+                    <div class="social-links">
+                        <a href="#">♡</a>
+                        <a href="#">✦</a>
+                        <a href="#">🎤</a>
+                        <a href="#">🌊</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Aqours</h4>
+                    <a href="#">Members</a>
+                    <a href="#">Songs</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">History</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Music</h4>
+                    <a href="#">Singles</a>
+                    <a href="#">Albums</a>
+                    <a href="#">Character Songs</a>
+                    <a href="#">Lyrics</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="#">Twitter</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Reddit</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>✦ Love Live! Sunshine!! • Aqours • 2026 ✦</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Member Modals -->
+    <div id="modal-chika" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('chika')">&times;</button>
+            <div class="modal-header" style="--accent: #ff6b9d">
+                <div class="modal-avatar"><img src="chika.svg" alt="Chika"></div>
+                <h2>Chika Takami</h2>
+                <span class="modal-role">Leader • Year 2</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>April 10</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>157cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>O</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>🍓</strong></div>
+                </div>
+                <p>Chika is the energetic and optimistic leader of Aqours. Inspired by μ's, she dreams of becoming a school idol and saving Uranohoshi Academy from closure. Her catchphrase is "Zensoku Zenshin!" (Full speed ahead!).</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Running</span><span>Singing</span><span>Strawberries</span><span>Idol Watching</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Triangle Dreamer" • "Koi ni Naritai AQUARIUM"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-riko" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('riko')">&times;</button>
+            <div class="modal-header" style="--accent: #e74c8b">
+                <div class="modal-avatar"><img src="riko.svg" alt="Riko"></div>
+                <h2>Riko Sakurauchi</h2>
+                <span class="modal-role">Keyboard • Year 2</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>September 19</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>160cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>B</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>🎹</strong></div>
+                </div>
+                <p>Riko transferred from Otonokizaka High School in Tokyo. She's a skilled pianist who initially hesitated to join Aqours but eventually found her passion for performing. She's gentle, refined, and slightly tsundere.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Piano</span><span>Ballet</span><span>Hot Springs</span><span>Cooking</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Melody" • "Waku-Waku-Week!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-kanan" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('kanan')">&times;</button>
+            <div class="modal-header" style="--accent: #3b82f6">
+                <div class="modal-avatar"><img src="kanan.svg" alt="Kanan"></div>
+                <h2>Kanan Matsuura</h2>
+                <span class="modal-role">Diver • Year 2</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>February 10</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>157cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>O</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>🐬</strong></div>
+                </div>
+                <p>Kanan is a strong and athletic diver who initially refused to join Aqours due to past failures. She's level-headed and caring, often acting as the group's voice of reason. Her family runs a diving shop near the sea.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Diving</span><span>Swimming</span><span>Hiking</span><span>Cooking</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Wonderful Stones" • "Blue Sailor"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-dia" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('dia')">&times;</button>
+            <div class="modal-header" style="--accent: #ef4444">
+                <div class="modal-avatar"><img src="dia.svg" alt="Dia"></div>
+                <h2>Dia Kurosawa</h2>
+                <span class="modal-role">Class Rep • Year 2</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>March 15</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>162cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>AB</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>💎</strong></div>
+                </div>
+                <p>Dia is the strict class representative and sister of Ruby. Despite her serious exterior, she's a huge fan of μ's and secretly idolizes them. She eventually becomes more open and shows her passionate side.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Classical Dance</span><span>μ's</span><span>Shiritori</span><span>Strawberries</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Shadow Effecter" • "Red Gem Wink"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-you" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('you')">&times;</button>
+            <div class="modal-header" style="--accent: #06b6d4">
+                <div class="modal-avatar"><img src="you.svg" alt="You"></div>
+                <h2>You Watanabe</h2>
+                <span class="modal-role">Energizer • Year 2</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>August 17</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>157cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>A</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>⚓</strong></div>
+                </div>
+                <p>You is Chika's childhood best friend and the most energetic member of Aqours. She always wears her signature headband and loves to encourage others. She's skilled at acrobatics and brings energy to every performance.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Acrobatics</span><span>Sports</span><span>Headbands</span><span>Yelling</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Sky I Can" • "Hop! Step! Jump!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-yoshiko" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('yoshiko')">&times;</button>
+            <div class="modal-header" style="--accent: #8b5cf6">
+                <div class="modal-avatar"><img src="yoshiko.svg" alt="Yoshiko"></div>
+                <h2>Yoshiko Tsushima</h2>
+                <span class="modal-role">Fallen Angel • Year 1</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>October 4</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>151cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>A</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>😈</strong></div>
+                </div>
+                <p>Yoshiko (or "Yohane" as she calls herself) believes she's a fallen angel cursed with bad luck. She puts on a chuunibyou act but is actually quite shy and sweet. Her real name is Yoshiko, which she thinks is "uncool."</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Fortune Telling</span><span>Chocolate</span><span>Yelling "Yohane"</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Love Wing Bell" • "Far far away"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-hanamaru" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('hanamaru')">&times;</button>
+            <div class="modal-header" style="--accent: #f59e0b">
+                <div class="modal-avatar"><img src="hanamaru.svg" alt="Hanamaru"></div>
+                <h2>Hanamaru Kunikida</h2>
+                <span class="modal-role">Bookworm • Year 1</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>March 3</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>152cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>O</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>📖</strong></div>
+                </div>
+                <p>Hanamaru is a gentle bookworm who loves reading and often falls asleep. She uses "zura" at the end of sentences and looks up to Riko. She's kind, soft-spoken, but has a surprising talent for singing.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Reading</span><span>Napping</span><span>Library</span><span>Zura</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Oshioteru" • "MIRAI TICKET"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-mari" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('mari')">&times;</button>
+            <div class="modal-header" style="--accent: #ec4899">
+                <div class="modal-avatar"><img src="mari.svg" alt="Mari"></div>
+                <h2>Mari Ohara</h2>
+                <span class="modal-role">Director • Year 3</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>June 30</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>163cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>O</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>🌹</strong></div>
+                </div>
+                <p>Mari is the half-Japanese, half-Italian vice principal who secretly helps Aqours. She's flamboyant, loves saying "Shiny!" and has a weakness for terrible jokes. She initially pretends to oppose the idol club but supports them from behind the scenes.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Bad Jokes</span><span>"Shiny!"</span><span>Music</span><span>Shopping</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Daydream Warrior" • "MIRAI TICKET"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-ruby" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('ruby')">&times;</button>
+            <div class="modal-header" style="--accent: #f43f5e">
+                <div class="modal-avatar"><img src="ruby.svg" alt="Ruby"></div>
+                <h2>Ruby Kurosawa</h2>
+                <span class="modal-role">Cute • Year 1</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <div class="modal-stat"><span>Birthday</span><strong>September 19</strong></div>
+                    <div class="modal-stat"><span>Height</span><strong>149cm</strong></div>
+                    <div class="modal-stat"><span>Blood Type</span><strong>A</strong></div>
+                    <div class="modal-stat"><span>Emoji</strong><strong>🎀</strong></div>
+                </div>
+                <p>Ruby is Dia's younger sister and the shyest member of Aqours. She admires her sister deeply and has a passion for cute things. Despite her timid nature, she transforms into an energetic performer on stage.</p>
+                <div class="modal-hobbies">
+                    <h4>Hobbies</h4>
+                    <span>Sewing</span><span>Cute Things</span><span>Dia</span><span>Strawberries</span>
+                </div>
+                <div class="modal-songs">
+                    <h4>Image Songs</h4>
+                    <p>"Pops Heart" • "Self Control"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sparkle effect
+        function createSparkles() {
+            const container = document.getElementById('sparkles');
+            const symbols = ['✦', '♡', '⭐', '✧', '🌊', '🎤'];
+            for (let i = 0; i < 25; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.animationDuration = Math.random() * 3 + 2 + 's';
+                sparkle.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(sparkle);
+            }
+        }
+        createSparkles();
+
+        // Modal functions
+        function openModal(name) {
+            document.getElementById('modal-' + name).classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(name) {
+            document.getElementById('modal-' + name).classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
