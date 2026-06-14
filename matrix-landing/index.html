@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX // System Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">MATRIX<span class="logo-dot">//</span></a>
+            <ul class="nav-links">
+                <li><a href="#system">System</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#pricing">Access</a></li>
+                <li><a href="#terminal">Terminal</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Jack In</a>
+                <a href="#" class="btn btn-primary">Initialize</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="WAKE UP">WAKE UP</h1>
+            </div>
+            <h2 class="hero-subtitle">The Matrix has you... <span class="blink">_</span></h2>
+            <p class="hero-desc">Follow the white rabbit. Dive into the digital rabbit hole with our cyberpunk-powered platform.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary btn-lg">
+                    <span class="btn-text">Enter the Matrix</span>
+                    <span class="btn-glitch"></span>
+                </a>
+                <a href="#" class="btn btn-outline btn-lg">Take the Blue Pill</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value" id="counter1">0</span>
+                    <span class="stat-label">Nodes Active</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="counter2">0</span>
+                    <span class="stat-label">Agents Online</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="counter3">0</span>
+                    <span class="stat-label">Uptime %</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="system" class="system-status">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">// SYSTEM STATUS</span>
+                <h2>System <span class="glitch-sm" data-text="Online">Online</span></h2>
+            </div>
+            <div class="status-grid">
+                <div class="status-card">
+                    <div class="status-indicator active"></div>
+                    <h3>Core Process</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 94%"></div>
+                    </div>
+                    <span class="status-text">94% EFFICIENCY</span>
+                </div>
+                <div class="status-card">
+                    <div class="status-indicator active"></div>
+                    <h3>Neural Network</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 87%"></div>
+                    </div>
+                    <span class="status-text">87% SYNC</span>
+                </div>
+                <div class="status-card">
+                    <div class="status-indicator warning"></div>
+                    <h3>Agent Detection</h3>
+                    <div class="progress-bar">
+                        <div class="progress warning" style="width: 23%"></div>
+                    </div>
+                    <span class="status-text">23% THREAT</span>
+                </div>
+                <div class="status-card">
+                    <div class="status-indicator active"></div>
+                    <h3>Firewall</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                    <span class="status-text">100% ACTIVE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modules" class="modules">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">// MODULES</span>
+                <h2>System <span class="gradient-text">Modules</span></h2>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Data Stream</h3>
+                    <p>Real-time data processing from the source code of the Matrix.</p>
+                    <div class="module-status">[ ACTIVE ]</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Agent Shield</h3>
+                    <p>Protection protocols against Sentinel detection algorithms.</p>
+                    <div class="module-status">[ ACTIVE ]</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Time Loop</h3>
+                    <p>Temporal manipulation for mission-critical operations.</p>
+                    <div class="module-status">[ STANDBY ]</div>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <h3>Code Breaker</h3>
+                    <p>Advanced decryption for locked systems and encrypted data.</p>
+                    <div class="module-status">[ ACTIVE ]</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">// ACCESS LEVELS</span>
+                <h2>Choose your <span class="gradient-text">access</span></h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Red Pill</h3>
+                    <div class="price">Free</div>
+                    <p>See how deep the rabbit hole goes</p>
+                    <ul class="pricing-features">
+                        <li>[ ] Basic access</li>
+                        <li>[ ] Limited modules</li>
+                        <li[ ] Community support</li>
+                        <li>[ ] Standard encryption</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Take It</a>
+                </div>
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-badge">RECOMMENDED</div>
+                    <h3>Blue Pill</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <p>Stay in the comfortable illusion</p>
+                    <ul class="pricing-features">
+                        <li>[x] Full access</li>
+                        <li>[x] All modules</li>
+                        <li>[x] Priority support</li>
+                        <li>[x] Military encryption</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Choose This</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Neo Mode</h3>
+                    <div class="price">$99<span>/mo</span></div>
+                    <p>Become The One</p>
+                    <ul class="pricing-features">
+                        <li>[x] Everything in Blue</li>
+                        <li>[x] Custom modules</li>
+                        <li>[x] Agent detection AI</li>
+                        <li>[x] Time manipulation</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Ascend</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="terminal" class="terminal-section">
+        <div class="container">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">matrix@system:~$</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">></span> Initializing Matrix connection...</p>
+                    <p class="terminal-line success"><span class="prompt">></span> Connection established. Welcome, Operator.</p>
+                    <p class="terminal-line"><span class="prompt">></span> Loading system modules... <span class="typing">████████████</span></p>
+                    <p class="terminal-line"><span class="prompt">></span> Status: <span class="highlight">ONLINE</span></p>
+                    <p class="terminal-line"><span class="prompt">></span> Ready for input<span class="blink">_</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2 class="glitch-sm" data-text="Wake Up, Neo...">Wake Up, Neo...</h2>
+                <p>The Matrix has you. Follow the white rabbit.</p>
+                <a href="#" class="btn btn-primary btn-lg">Knock, Knock</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">MATRIX<span class="logo-dot">//</span></a>
+                    <p>Welcome to the real world.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>System</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Access</a>
+                    <a href="#">Status</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Downloads</a>
+                    <a href="#">Tools</a>
+                    <a href="#">Community</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="#">Discord</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>// SYSTEM v2.0.26 | ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Matrix rain effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()_+-=[]{}|;:,.<>?';
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+
+        function drawMatrix() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#0F0';
+            ctx.font = fontSize + 'px Share Tech Mono';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillStyle = Math.random() > 0.98 ? '#fff' : '#0F0';
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 50);
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Counter animation
+        function animateCounter(id, target, suffix = '') {
+            const el = document.getElementById(id);
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                el.textContent = Math.floor(current).toLocaleString() + suffix;
+            }, 30);
+        }
+
+        // Start counters when visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter('counter1', 12847);
+                    animateCounter('counter2', 256);
+                    animateCounter('counter3', 99, '.9');
+                    observer.disconnect();
+                }
+            });
+        });
+        observer.observe(document.querySelector('.hero-stats'));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Typing effect
+        const typingEl = document.querySelector('.typing');
+        if (typingEl) {
+            setInterval(() => {
+                typingEl.style.opacity = typingEl.style.opacity === '0' ? '1' : '0';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
