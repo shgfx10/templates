@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOS // Explore the Universe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="stars"></canvas>
+    <div class="nebula"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">COSMOS<span class="logo-dot">*</span></a>
+            <ul class="nav-links">
+                <li><a href="#explore">Explore</a></li>
+                <li><a href="#planets">Planets</a></li>
+                <li><a href="#missions">Missions</a></li>
+                <li><a href="#pricing">Access</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Sign In</a>
+                <a href="#" class="btn btn-primary">Launch</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="planet planet-1"></div>
+            <div class="planet planet-2"></div>
+            <div class="planet planet-3"></div>
+            <div class="ring"></div>
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="shooting-star"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge">✦ Now Exploring Andromeda ✦</div>
+            <h1 class="hero-title">
+                <span class="line-1">Explore</span>
+                <span class="line-2 gradient-text">The Universe</span>
+            </h1>
+            <p class="hero-subtitle">Journey through billions of galaxies, discover new worlds, and unlock the mysteries of the cosmos.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary btn-lg">Begin Journey ✦</a>
+                <a href="#" class="btn btn-outline btn-lg">Watch Documentary</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">2T+</span>
+                    <span class="stat-label">Galaxies</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">100B+</span>
+                    <span class="stat-label">Stars</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">∞</span>
+                    <span class="stat-label">Possibilities</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="divider">
+        <div class="divider-line"></div>
+        <span class="divider-icon">✦</span>
+        <div class="divider-line"></div>
+    </section>
+
+    <section id="explore" class="explore">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Deep Space</span>
+                <h2>Discover <span class="gradient-text">New Worlds</span></h2>
+                <p>Advanced telescopes and AI-powered analysis reveal the universe like never before.</p>
+            </div>
+            <div class="explore-grid">
+                <div class="explore-card">
+                    <div class="explore-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                    </div>
+                    <h3>Exoplanet Hunter</h3>
+                    <p>AI-powered detection of habitable worlds beyond our solar system.</p>
+                    <span class="explore-tag">ACTIVE</span>
+                </div>
+                <div class="explore-card">
+                    <div class="explore-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h3>Nebula Mapper</h3>
+                    <p>Charting stellar nurseries where new stars are born.</p>
+                    <span class="explore-tag">SCANNING</span>
+                </div>
+                <div class="explore-card">
+                    <div class="explore-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    </div>
+                    <h3>Black Hole Research</h3>
+                    <p>Studying the most mysterious objects in the universe.</p>
+                    <span class="explore-tag">RESEARCH</span>
+                </div>
+                <div class="explore-card">
+                    <div class="explore-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v1m0 16v1m-8-9H3m18 0h-1m-2.636-6.364-.707.707M6.343 17.657l-.707.707m12.728 0-.707-.707M6.343 6.343l-.707-.707"/><circle cx="12" cy="12" r="4"/></svg>
+                    </div>
+                    <h3>Dark Matter</h3>
+                    <p>Unlocking the invisible force shaping our universe.</p>
+                    <span class="explore-tag">CLASSIFIED</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planets" class="planets">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Solar System</span>
+                <h2>Planetary <span class="gradient-text">Database</span></h2>
+                <p>Real-time data from our cosmic neighborhood.</p>
+            </div>
+            <div class="planets-showcase">
+                <div class="planet-card">
+                    <div class="planet-visual mercury"></div>
+                    <h3>Mercury</h3>
+                    <div class="planet-stats">
+                        <span>↗ 57.9M km</span>
+                        <span>88 days</span>
+                    </div>
+                </div>
+                <div class="planet-card">
+                    <div class="planet-visual venus"></div>
+                    <h3>Venus</h3>
+                    <div class="planet-stats">
+                        <span>↗ 108.2M km</span>
+                        <span>225 days</span>
+                    </div>
+                </div>
+                <div class="planet-card featured">
+                    <div class="planet-visual earth"></div>
+                    <h3>Earth</h3>
+                    <div class="planet-stats">
+                        <span>↗ 149.6M km</span>
+                        <span>365 days</span>
+                    </div>
+                    <span class="home-badge">HOME</span>
+                </div>
+                <div class="planet-card">
+                    <div class="planet-visual mars"></div>
+                    <h3>Mars</h3>
+                    <div class="planet-stats">
+                        <span>↗ 227.9M km</span>
+                        <span>687 days</span>
+                    </div>
+                </div>
+                <div class="planet-card">
+                    <div class="planet-visual jupiter"></div>
+                    <h3>Jupiter</h3>
+                    <div class="planet-stats">
+                        <span>↗ 778.5M km</span>
+                        <span>12 years</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="missions" class="missions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Active Missions</span>
+                <h2>Space <span class="gradient-text">Exploration</span></h2>
+            </div>
+            <div class="missions-grid">
+                <div class="mission-card">
+                    <div class="mission-status live">LIVE</div>
+                    <h3>Artemis III</h3>
+                    <p>Return to the Moon with crewed landing.</p>
+                    <div class="mission-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 67%"></div>
+                        </div>
+                        <span>67% Complete</span>
+                    </div>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-status active">ACTIVE</div>
+                    <h3>Europa Clipper</h3>
+                    <p>Search for habitable conditions on Jupiter's moon.</p>
+                    <div class="mission-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%"></div>
+                        </div>
+                        <span>45% Complete</span>
+                    </div>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-status planning">PLANNING</div>
+                    <h3>Mars Sample Return</h3>
+                    <p>Bring Martian samples back to Earth.</p>
+                    <div class="mission-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 23%"></div>
+                        </div>
+                        <span>23% Complete</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">✦ Access Levels</span>
+                <h2>Choose Your <span class="gradient-text">Orbit</span></h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Explorer</h3>
+                    <div class="price">Free</div>
+                    <p>Basic stargazing access</p>
+                    <ul class="pricing-features">
+                        <li>✦ Basic star map</li>
+                        <li>✦ 10 observations/day</li>
+                        <li>✦ Community access</li>
+                        <li>✦ Standard resolution</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Launch Free</a>
+                </div>
+                <div class="pricing-card pricing-popular">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <h3>Pioneer</h3>
+                    <div class="price">$29<span>/mo</span></div>
+                    <p>Deep space exploration</p>
+                    <ul class="pricing-features">
+                        <li>✦ Full star catalog</li>
+                        <li>✦ Unlimited observations</li>
+                        <li>✦ AI analysis tools</li>
+                        <li>✦ HD imagery</li>
+                        <li>✦ Priority support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-block">Go Pioneer</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Commander</h3>
+                    <div class="price">$99<span>/mo</span></div>
+                    <p>Lead the mission</p>
+                    <ul class="pricing-features">
+                        <li>✦ Everything in Pioneer</li>
+                        <li>✦ Real-time telescope</li>
+                        <li>✦ Mission planning</li>
+                        <li>✦ API access</li>
+                        <li>✦ Dedicated support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-block">Become Commander</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-glow"></div>
+                <h2>The Universe Awaits</h2>
+                <p>Join thousands of explorers discovering the cosmos.</p>
+                <a href="#" class="btn btn-primary btn-lg">Start Exploring ✦</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">COSMOS<span class="logo-dot">*</span></a>
+                    <p>Mapping the infinite.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <a href="#">Star Map</a>
+                    <a href="#">Exoplanets</a>
+                    <a href="#">Nebulae</a>
+                    <a href="#">Black Holes</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Missions</h4>
+                    <a href="#">Current</a>
+                    <a href="#">Upcoming</a>
+                    <a href="#">Archive</a>
+                    <a href="#">参与</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <a href="#">Discord</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Press</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>✦ COSMOS 2026 | Exploring the Final Frontier ✦</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Starfield
+        const canvas = document.getElementById('stars');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const stars = [];
+        for (let i = 0; i < 200; i++) {
+            stars.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2,
+                speed: Math.random() * 0.5
+            });
+        }
+
+        function drawStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            stars.forEach(star => {
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 255, 255, ${Math.random() * 0.8 + 0.2})`;
+                ctx.fill();
+                star.y += star.speed;
+                if (star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
+                }
+            });
+            requestAnimationFrame(drawStars);
+        }
+        drawStars();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Navbar scroll
+        window.addEventListener('scroll', () => {
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
