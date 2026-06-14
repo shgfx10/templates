@@ -6,6 +6,7 @@ A collection of premium website templates for tech startups and modern businesse
 
 | Template | Description | Price |
 |----------|-------------|-------|
+| [Matrix Landing](./matrix-landing) | Matrix cyberpunk with falling code animation | $29 |
 | [Sinnoh Landing](./sinnoh-landing) | Pokémon Sinnoh-themed landing page | $29 |
 | [Startup Landing](./startup-landing) | Modern dark startup landing page | $19 |
 
