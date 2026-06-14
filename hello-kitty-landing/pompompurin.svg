@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Body -->
+  <ellipse cx="100" cy="120" rx="70" ry="65" fill="#f4a460"/>
+  <!-- Beret -->
+  <ellipse cx="100" cy="60" rx="45" ry="20" fill="#8b4513"/>
+  <circle cx="100" cy="50" r="8" fill="#8b4513"/>
+  <!-- Face -->
+  <ellipse cx="100" cy="110" rx="55" ry="50" fill="#ffe4b5"/>
+  <!-- Eyes -->
+  <ellipse cx="80" cy="105" rx="5" ry="6" fill="#333"/>
+  <ellipse cx="120" cy="105" rx="5" ry="6" fill="#333"/>
+  <!-- Nose -->
+  <ellipse cx="100" cy="115" rx="6" ry="5" fill="#333"/>
+  <!-- Mouth -->
+  <path d="M 92 125 Q 100 135 108 125" stroke="#333" stroke-width="2" fill="none"/>
+  <!-- Blush -->
+  <ellipse cx="70" cy="120" rx="10" ry="6" fill="#ffcccc" opacity="0.5"/>
+  <ellipse cx="130" cy="120" rx="10" ry="6" fill="#ffcccc" opacity="0.5"/>
+</svg>
