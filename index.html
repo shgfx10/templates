@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Templates Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0f; color: #fff; }
+        .header { text-align: center; padding: 80px 20px 40px; }
+        .header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 12px; }
+        .header p { color: #888; font-size: 1.1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 40px 20px 80px; }
+        .card { background: #12121a; border: 1px solid #2a2a3a; border-radius: 12px; overflow: hidden; transition: all 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #6366f1; box-shadow: 0 20px 40px rgba(99,102,241,0.2); }
+        .card-preview { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+        .card-body { padding: 24px; }
+        .card-tag { display: inline-block; padding: 4px 10px; background: rgba(99,102,241,0.15); color: #818cf8; font-size: 0.75rem; font-weight: 600; border-radius: 4px; margin-bottom: 12px; }
+        .card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+        .card p { color: #888; font-size: 0.9rem; margin-bottom: 16px; }
+        .card-link { display: inline-flex; align-items: center; gap: 8px; color: #818cf8; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .card-link:hover { color: #a5b4fc; }
+        .preview-sinnoh { background: linear-gradient(135deg, #1a1a2e, #0a0f1a); }
+        .preview-startup { background: linear-gradient(135deg, #0f0f1a, #1a0a2e); }
+        .preview-matrix { background: #000; color: #0f0; font-family: monospace; }
+        .preview-hellokitty { background: linear-gradient(135deg, #fff5f9, #ffe4ec); }
+        .preview-universe { background: linear-gradient(135deg, #030014, #0a0a2e); }
+        .preview-lovelive { background: linear-gradient(135deg, #0c1929, #1a3350); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Website Templates</h1>
+        <p>6 premium templates for modern websites</p>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-preview preview-lovelive">🎤</div>
+            <div class="card-body">
+                <span class="card-tag">Anime</span>
+                <h3>Love Live Sunshine</h3>
+                <p>9 clickable member bios, ocean waves, SVG character avatars</p>
+                <a href="./lovelive-landing/" class="card-link">View Live →</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview preview-matrix">Matrix</div>
+            <div class="card-body">
+                <span class="card-tag">Cyberpunk</span>
+                <h3>Matrix Landing</h3>
+                <p>Falling green code animation, glitch effects, terminal</p>
+                <a href="./matrix-landing/" class="card-link">View Live →</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview preview-hellokitty" style="color:#ff69b4;">✿</div>
+            <div class="card-body">
+                <span class="card-tag">Kawaii</span>
+                <h3>Hello Kitty</h3>
+                <p>Pastel pink theme, floating sparkles, SVG characters</p>
+                <a href="./hello-kitty-landing/" class="card-link">View Live →</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview preview-sinnoh">❄️</div>
+            <div class="card-body">
+                <span class="card-tag">Pokemon</span>
+                <h3>Sinnoh Landing</h3>
+                <p>Pokemon themed with legendary backgrounds, Ash's Pikachu</p>
+                <a href="./sinnoh-landing/" class="card-link">View Live →</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview preview-universe">✦</div>
+            <div class="card-body">
+                <span class="card-tag">Space</span>
+                <h3>Universe Landing</h3>
+                <p>Animated starfield, floating planets, cosmic gradients</p>
+                <a href="./universe-landing/" class="card-link">View Live →</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-preview preview-startup" style="color:#a78bfa;">Nexus</div>
+            <div class="card-body">
+                <span class="card-tag">Startup</span>
+                <h3>Startup Landing</h3>
+                <p>Modern dark theme, gradient accents, pricing tables</p>
+                <a href="./startup-landing/" class="card-link">View Live →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
