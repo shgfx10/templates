@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFolio — Developer Portfolio Template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #09090b;
+            --surface: #18181b;
+            --surface-hover: #27272a;
+            --border: #27272a;
+            --text: #fafafa;
+            --text-muted: #a1a1aa;
+            --primary: #6366f1;
+            --primary-light: #818cf8;
+            --green: #22c55e;
+            --yellow: #eab308;
+        }
+
+        .light {
+            --bg: #ffffff;
+            --surface: #f4f4f5;
+            --surface-hover: #e4e4e7;
+            --border: #e4e4e7;
+            --text: #18181b;
+            --text-muted: #71717a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: all 0.3s;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 64px;
+            background: var(--bg);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            z-index: 100;
+            backdrop-filter: blur(12px);
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--text); }
+
+        .nav-actions {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            color: var(--text);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.2s;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--primary);
+            background: var(--surface-hover);
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-light);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* HERO */
+        .hero {
+            padding: 140px 24px 80px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--green);
+            margin-bottom: 24px;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span { color: var(--primary); }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 32px;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        /* STATS */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 60px;
+        }
+
+        .stat {
+            background: var(--surface);
+            padding: 24px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* SECTION */
+        section {
+            padding: 80px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 48px;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* PROJECTS */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 16px;
+        }
+
+        .project-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 8px;
+        }
+
+        .project-link {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .project-link:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            padding: 4px 10px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        /* GITHUB STATS */
+        .github-section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px;
+        }
+
+        .github-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .github-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .github-info h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .github-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .github-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .gh-stat {
+            text-align: center;
+        }
+
+        .gh-stat-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        .gh-stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        /* BLOG */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .blog-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .blog-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        .blog-date {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .blog-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .blog-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        /* NEWSLETTER */
+        .newsletter {
+            background: var(--primary);
+            border-radius: 16px;
+            padding: 48px;
+            text-align: center;
+            color: white;
+        }
+
+        .newsletter h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .newsletter p {
+            opacity: 0.9;
+            margin-bottom: 24px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .newsletter-btn {
+            padding: 12px 24px;
+            background: white;
+            color: var(--primary);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .newsletter-btn:hover {
+            transform: translateY(-1px);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 40px 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .github-stats { grid-template-columns: repeat(2, 1fr); }
+            .nav-links { display: none; }
+            .newsletter-form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <a href="#" class="nav-logo">devfolio</a>
+        <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="theme-toggle" onclick="toggleTheme()">☀</button>
+            <a href="#contact" class="btn-primary">Hire Me</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge">Open to work</div>
+        <h1>Building the <span>future</span>, one commit at a time.</h1>
+        <p>Full-stack developer specializing in React, Node.js, and cloud architecture. I turn complex problems into elegant solutions.</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">5+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">50+</div>
+                <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">30+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">10K+</div>
+                <div class="stat-label">Commits</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>A selection of my recent work and side projects</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🚀</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">↗</a>
+                        <a href="#" class="project-link">⚡</a>
+                    </div>
+                </div>
+                <h3>SaaS Dashboard</h3>
+                <p>Real-time analytics dashboard with WebSocket updates, role-based access, and export functionality.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Redis</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon" style="background: #22c55e;">🤖</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">↗</a>
+                        <a href="#" class="project-link">⚡</a>
+                    </div>
+                </div>
+                <h3>AI Content Generator</h3>
+                <p>GPT-powered content tool with custom fine-tuning, API integration, and batch processing.</p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">OpenAI</span>
+                    <span class="tag">AWS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon" style="background: #eab308;">📱</div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">↗</a>
+                        <a href="#" class="project-link">⚡</a>
+                    </div>
+                </div>
+                <h3>Mobile Fitness App</h3>
+                <p>Cross-platform fitness tracker with workout plans, progress charts, and social features.</p>
+                <div class="project-tags">
+                    <span class="tag">React Native</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Redux</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section id="github">
+        <div class="section-header">
+            <h2>GitHub Activity</h2>
+            <p>My open source contributions and coding streak</p>
+        </div>
+        <div class="github-section">
+            <div class="github-header">
+                <div class="github-avatar">SK</div>
+                <div class="github-info">
+                    <h3>@selvagk</h3>
+                    <p>Full-stack developer & open source contributor</p>
+                </div>
+            </div>
+            <div class="github-stats">
+                <div class="gh-stat">
+                    <div class="gh-stat-value">127</div>
+                    <div class="gh-stat-label">Repositories</div>
+                </div>
+                <div class="gh-stat">
+                    <div class="gh-stat-value">2.4K</div>
+                    <div class="gh-stat-label">Contributions</div>
+                </div>
+                <div class="gh-stat">
+                    <div class="gh-stat-value">89</div>
+                    <div class="gh-stat-label">Stars Earned</div>
+                </div>
+                <div class="gh-stat">
+                    <div class="gh-stat-value">45</div>
+                    <div class="gh-stat-label">Followers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <div class="section-header">
+            <h2>Latest Articles</h2>
+            <p>Thoughts on development, design, and technology</p>
+        </div>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="blog-date">Jun 10, 2026</div>
+                <h3>Why TypeScript is Taking Over</h3>
+                <p>Exploring the rise of TypeScript and why every JavaScript project should consider it.</p>
+            </div>
+            <div class="blog-card">
+                <div class="blog-date">Jun 5, 2026</div>
+                <h3>Building Scalable APIs with Node.js</h3>
+                <p>Best practices for designing REST APIs that can handle millions of requests.</p>
+            </div>
+            <div class="blog-card">
+                <div class="blog-date">May 28, 2026</div>
+                <h3>The Future of Web Development</h3>
+                <p>From WebAssembly to AI-assisted coding - what's coming next.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="contact">
+        <div class="newsletter">
+            <h3>Stay Updated</h3>
+            <p>Get notified about new projects, articles, and open source releases.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="your@email.com" class="newsletter-input">
+                <button class="newsletter-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 DevFolio. Built with passion and coffee.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('light');
+            const btn = document.querySelector('.theme-toggle');
+            btn.textContent = document.body.classList.contains('light') ? '☾' : '☀';
+        }
+    </script>
+</body>
+</html>
