@@ -10,7 +10,6 @@ A collection of premium website templates for tech startups and modern businesse
 | [Universe Landing](./universe-landing) | Cosmic space theme with animated starfield | $29 |
 | [Hello Kitty Landing](./hello-kitty-landing) | Sanrio kawaii pastel pink theme | $29 |
 | [Matrix Landing](./matrix-landing) | Matrix cyberpunk with falling code animation | $29 |
-| [Sinnoh Landing](./sinnoh-landing) | Pokémon Sinnoh-themed landing page | $29 |
 | [Startup Landing](./startup-landing) | Modern dark startup landing page | $19 |
 
 ## Preview
